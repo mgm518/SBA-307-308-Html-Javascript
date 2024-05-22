@@ -8,7 +8,7 @@ nav {
 }
 
 .navbar {
-  background: var(--theme-d1);
+  background: var(--nav-back);
   display: flex;
   justify-content: right;
   margin: 0;
@@ -25,8 +25,8 @@ nav {
 }
 
 .navbar a:hover {
-  background: var(--theme-s3);
-  color: var(--text-alt);
+  background: var(--theme-main);
+  color: var(--text-light);
   cursor: pointer;
 }
 

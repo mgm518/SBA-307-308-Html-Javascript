@@ -1,7 +1,7 @@
 @import url(theme.css);
 .rating1 {
   background: var(--rating1);
-  color: var(--text-dark);
+  color: var(--text);
 }
 
 .rating1-text {
@@ -10,7 +10,7 @@
 
 .rating2 {
   background: var(--rating2);
-  color: var(--text-dark);
+  color: var(--text);
 }
 
 .rating2-text {

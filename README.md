@@ -14,11 +14,11 @@ that it is user-friendly.
 
 ## Screenshots
 
-![Screenshot 1](./screenshots/2024-05-21(18_45_54).png)
-![Screenshot 2](./screenshots/2024-05-21(18_46_07).png)
-![Screenshot 3](./screenshots/2024-05-21(18_47_54).png)
-![screenshot 4](./screenshots/2024-05-21(19_00_16).png)
-![Screenshot 5](./screenshots/2024-05-21(19_20_16).png)
+![Screenshot 1](./screenshots/2024-05-22(16_37_48).png)
+![Screenshot 2](./screenshots/2024-05-22(16_38_29).png)
+![Screenshot 3](./screenshots/2024-05-22(16_39_16).png)
+![screenshot 4](./screenshots/2024-05-22(16_39_54).png)
+![Screenshot 5](./screenshots/2024-05-22(16_46_11).png)
 
 ## Technical Requirements
 

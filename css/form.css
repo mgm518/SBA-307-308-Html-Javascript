@@ -6,7 +6,7 @@ body {
   font-style: normal;
   height: 100vh;
   margin-top: 3rem;
-  background-color: var(--theme);
+  background-color: var(--theme-5);
   color: var(--text);
 }
 section {
@@ -56,7 +56,7 @@ header h1 {
   width: 300px;
   /* margin: 30vh auto 0 auto; */
   padding: 20px;
-  background: var(--theme-s2);
+  background: var(--theme-4);
   color: var(--text);
   border-radius: 10px;
   font-size: 16px;
@@ -68,8 +68,8 @@ header h1 {
   padding: 10px;
   margin-top: 10px;
   width: 100%;
-  color: var(--theme);
-  background: linear-gradient(to top left, var(--theme-s2), var(--theme-s4), var(--theme-s3));
+  color: var(--text);
+  background: linear-gradient(to top left, var(--form-theme-2), var(--form-theme-1), var(--form-theme-2));
   /* background: linear-gradient(to top left, #cfbeaf, rgb(73, 45, 43), #643f2c); */
   border: none;
   border-radius: 4px;
@@ -79,13 +79,14 @@ header h1 {
   padding: 10px;
   margin-top: 10px;
   width: 100%;
-  color: white;
+  color: var(--text-alt);
   /* background: linear-gradient(to top right, #64452c, #917a69, #cfc1af); */
-  background: linear-gradient(to top right, var(--theme-s3), var(--theme-s4), var(--theme-s2));
+  background: linear-gradient(to top right, var(--form-theme-2), var(--form-theme-3), var(--form-theme-2));
   border: none;
-  border-radius: 4px;
-  box-shadow: 0 0 5px rgb(255, 183, 165), 0 0 10px #4c150c, 0 0 15px #fb8f03,
-    0 0 20px #652e14, 0 0 35px #b76526, 0 0 40px #31200f;
+  border-radius: 4px; /*light dark mid*/
+  box-shadow: 0 0 5px var(--button-glow-2), 0 0 10px var(--button-glow-3), 0 0 15px var(--button-glow-1),
+    0 0 20px var(--button-glow-2), 0 0 10px var(--button-glow-1), 0 0 15px var(--button-glow-3);
+    /*mid light dark*/
 }
 fieldset {
   display: flex;
@@ -104,7 +105,9 @@ button:hover {
   width: 100%;
 }
 .input-control input {
-  border: 2px solid #f0f0f0;
+  background-color: var(--input-background);
+  color: var(--text);
+  border: 2px solid var(--input-border);
   border-radius: 4px;
   display: block;
   font-size: 12px;
@@ -118,8 +121,8 @@ button:hover {
 
 /* added in for form validation */
 .input-control.success input {
-  border-color: var(--forth-c1);
-  box-shadow: 0 0 5px var(--forth-c1);
+  border-color: var(--success);
+  box-shadow: 0 0 5px var(--success);
 }
 
 .input-control.error input {
