@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Register</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="../css/form.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="../css/nav.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <style>
+      .error-message {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <div class="box navicon-section">
+          <label class="switch">
+            <i class="navicon fa-solid fa-sun"></i>
+            <input type="checkbox" id="toggleTheme" />
+          </label>
+        </div>
+        <a href="home.html">Home</a>
+        <a href="login.html">Login</a>
+      </div>
+    </nav>
+    <main class="box">
+      <section></section>
+      <div class="box-vertical">
+        <header>
+          <div class="icon"><i class="fa-solid fa-user"></i></div>
+          <h1>Sign Up</h1>
+        </header>
+        <form id="form" action="login.html">
+          <div class="input-control">
+            <!-- <label for="name">Full Name</label> -->
+            <input id="name" name="name" type="text" placeholder="Full Name" />
+            <div class="error-message" id="nameError">Please enter your full name.</div>
+          </div>
+          <div class="input-control">
+            <!-- <label for="email">Email</label> -->
+            <input id="email" name="email" type="text" placeholder="Email" />
+            <div class="error-message" id="emailError">
+              Please enter a valid email address.
+            </div>
+          </div>
+          <div class="input-control">
+            <!-- <label for="password">Password</label> -->
+            <div class="box visible">
+              <input
+                id="password"
+                name="password"
+                type="password"
+                placeholder="Password"
+              />
+              <label class="switch">
+                <i class="icon fa-regular fa-eye" id="eye"></i>
+                <input type="checkbox" id="toggleEye" />
+              </label>
+            </div>
+            <div class="error-message" id="passwordError">
+              Password must be at least 8 characters long and contain at least
+              one uppercase letter, one lowercase letter, and one digit.
+            </div>
+          </div>
+          <div class="input-control">
+            <!-- <label for="confirm-password">Confirm Password</label> -->
+            <input
+              id="confirm-password"
+              name="confirm-password"
+              type="password"
+              placeholder="Confirm Password"
+            />
+            <div class="error-message" id="confirmPasswordError">
+              Must match the Password field.
+            </div>
+          </div>
+          <div class="input-control">
+            <input type="tel" id="tel" name="tel" placeholder="Phone number" />
+            <div class="error-message" id="telError">
+              Please enter a valid phone number.
+            </div>
+          </div>
+          <div class="input-control">
+            <select id="refer" name="refer">
+              <option value="" disabled selected>
+                How did you hear about us?
+              </option>
+              <option value="facebook">Facebook</option>
+              <option value="linkedin">Linkedin</option>
+              <option value="google">Google</option>
+            </select>
+            <div class="error-message" id="referError" style="margin-top: 10px">
+              Please select how you heard about us.
+            </div>
+          </div>
+          <div class="input-control">
+            <fieldset>
+              <legend>Preferred Contact Method</legend>
+              <label>
+                <input type="radio" name="contact" value="email" />
+                Email
+              </label>
+              <label>
+                <input type="radio" name="contact" value="phone" />
+                Phone
+              </label>
+            </fieldset>
+          </div>
+          <div class="input-control">
+            <label style="display: flex; margin-top: 10px">
+              <input type="checkbox" id="terms" name="terms" style="flex:1" />
+              <p style="flex:3">I agree to the terms and conditions</p>
+            </label>
+            <div
+              class="error-message"
+              id="termsError"
+              style="margin-top: 5px; text-align: right"
+            >
+              You must agree to the terms and conditions.
+            </div>
+          </div>
+          <button id="sub" type="submit">Register</button>
+          <button
+            id="login"
+            type="button"
+            onClick="document.location='login.html'"
+          >
+            Already a member? Login
+          </button>
+        </form>
+      </div>
+    </main>
+    <script type="module" src="../js/forms.js"></script>
+    <script type="module" src="../js/validation.js"></script>
+    <script type="module" src="../js/theme.js"></script>
+  </body>
+</html>

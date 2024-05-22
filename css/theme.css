@@ -1,0 +1,52 @@
+:root {
+
+  --first: #081f37;
+  --second: #5fc9f3;
+  --second-c1: #fada5e;
+  --sixth: #46a1d6;
+  --third: #2e79ba;
+  --forth: #1e549f;
+  --forth-c1: #00bd74;
+
+  --fifth: #e6d9cd;
+  --fifth-d1: #bcb1a7; 
+  --fifth-d2: #968E86;
+
+  --theme: var(--fifth);
+  --theme-d1: var(--fifth-d1);
+  --theme-d2: var(--fifth-d2);
+  --theme-s1: var(--first);
+  --theme-s2: var(--second);
+  --theme-s3: var(--third);
+  --theme-s4: var(--forth);
+  --text: var(--first);
+  --text-alt: var(--fifth);
+  --text-light: var(--fifth);
+  --text-dark: var(--first);
+  --box-shadow1: var(--forth);
+  --box-shadow2: var(--fifth);
+  --linear-gradient-light: linear-gradient(#ffffff7f, #ffffff7f);
+  --linear-gradient-dark: linear-gradient(#0000007f, #0000007f);
+  --linear-gradient: var(--linear-gradient-light);
+  --error: #fc355c;
+
+  --rating1: var(--forth-c1);
+  --rating2: var(--second-c1);
+  --rating3: var(--error);
+}
+
+.dark {
+  --theme: var(--first);
+  --theme-d1: var(--fifth-d2);
+  --theme-d2: var(--fifth-d1);
+  --theme-s1: var(--second);
+  --theme-s2: var(--forth);
+  --theme-s3: var(--sixth);
+  --theme-s4: var(--second);
+  --text: var(--fifth);
+  --text-alt: var(--first);
+  --box-shadow1: var(--third);
+  --box-shadow2: var(--fifth);
+  --linear-gradient: var(--linear-gradient-dark);
+}
+
